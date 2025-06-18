@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(249, 245, 245);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+}
+
+.header h1 {
+  color: rgb(219, 135, 79);
+  font-size: 22px;
+  flex: 1;
+  text-align: center;
+  font-style: italic;
+}
+
+.nav button {
+  background-color: chocolate;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav button:hover {
+  background-color: rgb(71, 16, 16);
+  color: beige;
+}
+.why{
+  color: black;
+}
+
+.campus-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.vision-section {
+  padding: 30px;
+  background: linear-gradient(to bottom, wheat, black);
+}
+
+.vision-section h2 {
+  text-align: center;
+  color: rgb(85, 16, 16);
+  margin-bottom: 20px;
+}
+
+.vision-section p {
+  color: rgb(241, 219, 219);
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.offerings {
+  text-align: center;
+  padding: 40px;
+  color: black;
+}
+
+.offerings button {
+  width: 180px;
+  height: 100px;
+  margin: 15px;
+  background-color: chocolate;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.offerings button:hover {
+  background-color: rgb(71, 16, 16);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    margin: 10px 0;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav button {
+    width: 100px;
+    margin: 5px;
+  }
+}
+.why{
+  color: black;
+  padding: 70px;
+  background: linear-gradient(to bottom, wheat, rgb(143, 124, 124));
+
+}
+
+.why h2 {
+  text-align: center;
+  color: rgb(85, 16, 16);
+  margin-bottom: 20px;
+}
+
+.why h3 {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(85, 16, 16);
+  margin-bottom: 20px;
+}
