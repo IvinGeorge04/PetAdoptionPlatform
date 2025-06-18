@@ -1,0 +1,58 @@
+.about-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fefefe;
+}
+
+.about-header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+ 
+}
+
+.about-header h1 {
+  margin-bottom: 10px;
+}
+
+.about-header button {
+  background-color: chocolate;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.about-header button:hover {
+  background-color: rgb(71, 16, 16);
+}
+
+.about-content {
+  padding: 20px;
+  padding-top: 200px;
+}
+
+.about-content img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 20px;
+  margin-top: 0px;
+}
+
+.about-content p {
+  
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
+  text-align: justify;
+}
+.about-content h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(226, 163, 47);
+  text-align: center;
+}

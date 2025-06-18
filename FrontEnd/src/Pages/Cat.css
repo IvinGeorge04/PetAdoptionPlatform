@@ -1,0 +1,104 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  padding-top: 200px;
+}
+
+.pet-card {
+  width: 250px;
+  border: 1px solid #eee;
+
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.pet-img {
+  position: relative;
+  background-color: #fde9f1;
+}
+
+.pet-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #b48add;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.pet-info {
+  padding: 1rem;
+  text-align: left;
+  color: black;
+}
+
+.pet-name {
+  color: #a259e4;
+  font-weight: bold;
+}
+
+.traits {
+  background: #fce8e6;
+  padding: 8px;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contact-btn,
+.adopt-btn {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 8px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-btn {
+  background-color: #e6d7f7;
+  color: #673ab7;
+}
+
+.adopt-btn {
+  background-color: #673ab7;
+  color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(249, 245, 245);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+}
+
+.header h1 {
+  color: rgb(219, 135, 79);
+  font-size: 22px;
+  flex: 1;
+  text-align: center;
+  font-style: italic;
+}

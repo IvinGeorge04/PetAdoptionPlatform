@@ -1,0 +1,65 @@
+.medical-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #111;
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 150px;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+.image-gallery .image-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.image-gallery img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-caption {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.image-text {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.image-text img {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.image-text p {
+  width: 50%;
+}

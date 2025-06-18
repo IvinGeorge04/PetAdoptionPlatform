@@ -1,0 +1,81 @@
+/* Sidebar base styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #de955a, #644014);
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Sidebar links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.sidebar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 30px;
+  left: 5px;
+  font-size: 15px;
+  background: #cd7125;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  z-index: 1100;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #f0f1f2;
+  color: #cd7125;
+}
+
+/* Background overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

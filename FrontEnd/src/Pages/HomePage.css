@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(249, 245, 245);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  padding-left: 15px;
+}
+
+.header h1 {
+  color: rgb(219, 135, 79);
+  font-size: 22px;
+  flex: 1;
+  text-align: center;
+  font-style: italic;
+}
+
+.nav button {
+  background-color: chocolate;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav button:hover {
+  background-color: rgb(71, 16, 16);
+  color: beige;
+}
+.why{
+  color: black;
+  padding: 70px;
+  background: linear-gradient(to bottom, wheat, rgb(143, 124, 124));
+
+}
+
+.why h2 {
+  text-align: center;
+  color: rgb(85, 16, 16);
+  margin-bottom: 20px;
+}
+
+.why h3 {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(85, 16, 16);
+  margin-bottom: 20px;
+}
+
+
+.campus-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.vision-section {
+  padding: 70px;
+  background: linear-gradient(to bottom, wheat, rgb(51, 42, 42));
+}
+
+.vision-section h2 {
+  text-align: center;
+  color: rgb(85, 16, 16);
+  margin-bottom: 20px;
+}
+
+.vision-section p {
+  color: rgb(241, 219, 219);
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.offerings {
+  text-align: center;
+  padding: 40px;
+  color: black;
+}
+
+.offerings h2 {
+  margin-bottom: 100px;
+}
+
+.offerings button {
+  width: 150px;
+  height: 100px;
+  margin-right: 50px;
+  margin: 15px;
+  background-color:  #ff6b81;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.offerings button:hover {
+  background-color: rgb(71, 16, 16);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    margin: 10px 0;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav button {
+    width: 100px;
+    margin: 5px;
+  }
+}
+
+.heart-button {
+  position: relative;
+  background-color: transparent;
+  width: 100px;
+  height: 90px;
+  border: none;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  margin: 10px;
+  z-index: 0;
+}
+
+.heart-button::before,
+.heart-button::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ff6b81;
+  border-radius: 50%;
+  z-index: -1; 
+}
+
+.heart-button::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart-button::after {
+  left: 50px;
+  top: 0;
+}
+
+.heart-button span {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  font-size: 14px;
+  color: white;
+  transform: rotate(45deg); /* Cancel button rotation */
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 80px;
+  text-align: center;
+}
