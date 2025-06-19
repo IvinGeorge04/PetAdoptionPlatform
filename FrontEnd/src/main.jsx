@@ -12,11 +12,8 @@ import HomePage from './Pages/HomePage.jsx'
 import Laws from './Pages/Laws.jsx'
 import PawsAndPeace from './Pages/pawsAndPeace.jsx'
 import MedicalCare from './Pages/MedicalCare.jsx'
-<<<<<<< HEAD
 import Login from './Pages/Login.jsx'
-=======
 import FaqPage from './Pages/FaqPage.jsx'
->>>>>>> 4460471e42140981f61a9fa4efee96a08aa15834
 
 
 createRoot(document.getElementById('root')).render(
