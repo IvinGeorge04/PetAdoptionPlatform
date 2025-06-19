@@ -3,18 +3,22 @@ import './Cat.css';
 import { Link } from 'react-router-dom'; 
 import axios from 'axios';
 import { useEffect } from 'react';
+import Sidebar from './Sidebar';
 
 function Dog() {
   const [dogs, setDogs] = React.useState([]);
-    
+    const handleInquire = () =>{
+    alert(`Pet is inquired`);
+  }
     useEffect(()=>{
       axios.get('http://localhost:3500/api/dogData')
         .then(response =>setDogs(response.data))
         .catch(error => console.error('Error fetching turfs:',error));
     },[]);
   return (
-    <div> {/* ✅ One root div */}
+    <div> {/* One root div */}
       <header className="header">
+        <Sidebar></Sidebar>
         <img
           className="logo"
           src="https://media.istockphoto.com/id/1148570769/vector/veterinary-clinic-vector-logo.jpg?s=612x612&w=0&k=20&c=soi94tMr2NiMQ9b9X48p4OMW3V2i7JlGORDfCNBEUSs="
@@ -34,7 +38,7 @@ function Dog() {
           <div className="pet-card" key={index}>
             <div className="pet-img">
               <img src={dog.image} alt={dog.name} />
-              <span className="badge">Pet Quality</span>
+              
             </div>
             <div className="pet-info">
               <p>Hi! My name is: <span className="pet-name">{dog.name}</span></p>
@@ -44,7 +48,7 @@ function Dog() {
               <p>City: {dog.city}</p>
               <div className="traits">{dog.description}</div>
               <button className="contact-btn">📞 {dog.num}</button>
-              <button className="adopt-btn">Inquire</button>
+              <button className="adopt-btn" onClick={handleInquire}>Inquire</button>
             </div>
           </div>
         ))}

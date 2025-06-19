@@ -38,7 +38,7 @@ function Laws() {
           ANIMAL PROTECTION LAWS <span className="highlight">& LEGAL RESOURCES</span>
         </h1>
         <p className="laws-paragraph">
-          At AMTM, protecting animals goes far beyond rescue and rehabilitation—it includes awareness and enforcement
+          At Pawfect Match, protecting animals goes far beyond rescue and rehabilitation—it includes awareness and enforcement
           of the laws that are designed to safeguard their lives. India has a strong legal framework for animal
           welfare, but due to limited awareness, many violations go unnoticed or unchallenged.
         </p>

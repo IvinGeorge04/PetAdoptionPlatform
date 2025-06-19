@@ -22,7 +22,7 @@ function ContactPage() {
         </nav>
       </header>
 
-      {/* 👇 Flex container to place address & image side by side */}
+      {/*  Flex container to place address & image side by side */}
       <div className="contact-flex">
         <section className="con">
           <h3>Address:</h3>

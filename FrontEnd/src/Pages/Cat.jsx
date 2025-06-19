@@ -3,6 +3,7 @@ import './Cat.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom'; 
 import { useEffect } from 'react';
+import Sidebar from './Sidebar';
 
 function Cat() {
   const [pets, setPets] = React.useState([]);
@@ -16,28 +17,29 @@ function Cat() {
       .catch(error => console.error('Error fetching turfs:',error));
   },[]);
   return (
-    <div> {/* ✅ One root div */}
+    <div> {/*  One root div */}
       <header className="header">
+        <Sidebar></Sidebar>
         <img
           className="logo"
           src="https://media.istockphoto.com/id/1148570769/vector/veterinary-clinic-vector-logo.jpg?s=612x612&w=0&k=20&c=soi94tMr2NiMQ9b9X48p4OMW3V2i7JlGORDfCNBEUSs="
           alt="Pawfect Match Logo"
         />
         <h1>Pawfect Match</h1>
-        <nav className="nav">
-          <Link to="/"><button>Home</button></Link>
-          <Link to="/about"><button>About</button></Link>
-          <Link to="/contact"><button>Contact</button></Link>
-          <Link to="/rank"><button>Rank</button></Link>
-        </nav>
-      </header>
-
+       <nav className="nav">
+                 <Link to="/"><button>Home</button></Link>
+                 <Link to="/about"><button>About</button></Link>
+                 <Link to="/contact"><button>Contact</button></Link>
+                 <Link to="/SignUp"><button>SignUp</button></Link>
+               </nav>
+             </header>
+      
       <div className="card-container">
         {pets.map((pet, index) => (
           <div className="pet-card" key={index}>
             <div className="pet-img">
               <img src={pet.image} alt={pet.name} />
-              <span className="badge">Pet Quality</span>
+              
             </div>
             <div className="pet-info">
               <p>Hi! My name is: <span className="pet-name">{pet.name}</span></p>
