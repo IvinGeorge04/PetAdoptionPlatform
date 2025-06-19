@@ -12,6 +12,7 @@ import HomePage from './Pages/HomePage.jsx'
 import Laws from './Pages/Laws.jsx'
 import PawsAndPeace from './Pages/pawsAndPeace.jsx'
 import MedicalCare from './Pages/MedicalCare.jsx'
+import Login from './Pages/Login.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
        <Route path="/Cat" element={<Cat/>}/> 
        <Route path="/Dog" element={<Dog/>}/> 
        <Route path="/SignUp" element={<SignUp/>}/>
+       <Route path="/Login" element={<Login/>}/>
        <Route path="/Laws" element={<Laws></Laws>}/>
        <Route path="/PawsAndPeace" element={<PawsAndPeace></PawsAndPeace>}/>
        <Route path="/MedicalCare" element={<MedicalCare/>}/>

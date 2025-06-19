@@ -1,64 +1,73 @@
-.login-container {
-  max-width: 400px;
-  margin: auto;
-  padding: 100px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-left: 400px;
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 450px;
+  padding-top: 100px;
 }
 
-.login-title {
-  font-size: 24px;
+.signup-title {
+  font-size: 28px;
   font-weight: bold;
-  color: #c16248;
-}
-
-.login-subtitle {
-  margin-bottom: 20px;
-  color: #cb724c;
-}
-
-
-
-.login-form {
-  text-align: left;
-}
-
-.login-form label {
-  display: block;
+  color: #a54a26;
   margin-bottom: 5px;
-  font-weight: 500;
 }
 
-.login-form input {
-  width: 100%;
+.signup-subtitle {
+  font-size: 16px;
+  color: #855f4c;
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.signup-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.signup-form input {
   padding: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
 }
 
-.forgot-link {
-  float: right;
-  font-size: 12px;
-  color: #93671f;
+.signup-btn {
+  padding: 10px;
+  background-color: #b3541b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-btn:hover {
+  background-color: #9d4517;
+}
+
+.login-box {
+  margin-top: 20px;
+  color: #a14f3f;
+  font-size: 14px;
+}
+
+.login-box a {
+  color: blue;
   text-decoration: none;
 }
 
-.login-btn {
-  width: 100%;
-  background: rgb(193, 100, 25);
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.signup-box {
-  margin-top: 2rem;
-  font-size: 14px;
-  color: #cc6e3f;
+.login-box a:hover {
+  text-decoration: underline;
 }
 .header {
   display: flex;
@@ -69,6 +78,7 @@
   padding: 10px 20px;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 0px;
 }
 
 .logo {

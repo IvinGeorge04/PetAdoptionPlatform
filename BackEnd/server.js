@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import catData from "./routes/catData.js"
 import dogData from "./routes/dogData.js"
+import authRoutes from "./routes/authRoutes.js"
 
 const app = express()
 const port =3500
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/catData',catData);
 app.use('/api/dogData',dogData);
+app.use('/api/auth',authRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {

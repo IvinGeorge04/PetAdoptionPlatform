@@ -6,6 +6,9 @@ import { useEffect } from 'react';
 
 function Cat() {
   const [pets, setPets] = React.useState([]);
+  const handleInquire = () =>{
+    alert(`Pet is inquired`);
+  }
   
   useEffect(()=>{
     axios.get('http://localhost:3500/api/catData')
@@ -44,7 +47,7 @@ function Cat() {
               <p>City: {pet.city}</p>
               <div className="traits">{pet.description}</div>
               <button className="contact-btn">📞 {pet.num}</button>
-              <button className="adopt-btn">Inquire</button>
+              <button className="adopt-btn" onClick={handleInquire}>Inquire</button>
             </div>
           </div>
         ))}
