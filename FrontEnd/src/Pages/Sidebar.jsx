@@ -17,9 +17,9 @@ function Sidebar() {
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <ul>
           <li><a href="Laws">⚖️Laws</a></li>
-          <li><a href="PawsAndPeace">Paws&Peace</a></li>
-          <li><a href="MedicalCare">MedicalCare</a></li>
-          <li><a href="FagPage">FAQs</a></li>
+          <li><a href="PawsAndPeace">🐾Paws&Peace</a></li>
+          <li><a href="MedicalCare">🦴MedicalCare</a></li>
+          <li><a href="FaqPage">🗨️FAQs</a></li>
         </ul>
       </div>
 
