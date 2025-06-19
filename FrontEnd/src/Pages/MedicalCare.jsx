@@ -1,5 +1,5 @@
 import React from 'react';
-import './MedicalCare.css'; // Link to your CSS file
+import './MedicalCare.css'; 
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 function MedicalCare() {
@@ -19,7 +19,7 @@ function MedicalCare() {
     <div className="medical-page">
 
       <section className="intro-section">
-        <h2><strong>Providing continuous medical treatment and rehabilitation<br />for animals under AMTM’s care.</strong></h2>
+        <h3><i>Providing continuous medical treatment and rehabilitation<br />for animals under AMTM’s care.</i></h3>
         <p>
           Some animals come to us battered and broken, and while many recover and find new homes, others need long-term support.
           These resilient survivors—our permanent family—are with us for life. They have faced unimaginable hardships, from severe
@@ -29,7 +29,7 @@ function MedicalCare() {
       </section>
 
       <section className="neutering-section">
-        <h2><strong>How We Ensure Safe and Effective Neutering</strong></h2>
+        <h3><i>How We Ensure Safe and Effective Neutering</i></h3>
         <p>
           At AMTM, every animal we rescue is treated with care and dignity. Our trained veterinarians conduct sterilizations
           using the latest medical practices, ensuring that the procedure is safe, effective, and as stress-free as possible for the animals.
@@ -47,7 +47,7 @@ function MedicalCare() {
       </section>
 
       <section className="support-section">
-        <h2><strong>Your Support is Their Lifeline</strong></h2>
+        <h3><i><strong>Your Support is Their Lifeline</strong></i></h3>
         <p>
           By sponsoring a day of care, you help provide essential food, medical treatments, and enrichment activities for our
           permanent residents. Every contribution, no matter how small, makes a significant impact.

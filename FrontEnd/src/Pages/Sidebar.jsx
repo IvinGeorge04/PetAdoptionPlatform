@@ -19,7 +19,7 @@ function Sidebar() {
           <li><a href="Laws">⚖️Laws</a></li>
           <li><a href="PawsAndPeace">Paws&Peace</a></li>
           <li><a href="MedicalCare">MedicalCare</a></li>
-          <li><a href="#">⚙️ Settings</a></li>
+          <li><a href="FagPage">FAQs</a></li>
         </ul>
       </div>
 
