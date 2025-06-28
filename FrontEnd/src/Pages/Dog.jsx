@@ -29,7 +29,7 @@ function Dog() {
           <Link to="/"><button>Home</button></Link>
           <Link to="/about"><button>About</button></Link>
           <Link to="/contact"><button>Contact</button></Link>
-          <Link to="/SignUp"><button>Login</button></Link>
+          <Link to="/SignUp"><button>SignUp</button></Link>
         </nav>
       </header>
 
