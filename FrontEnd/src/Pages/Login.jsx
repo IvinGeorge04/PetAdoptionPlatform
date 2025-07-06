@@ -16,7 +16,7 @@ function Login() {
           try {
             // ✅ Updated to include full login path
             // const response = await axios.post(${import.meta.env.VITE_BACKEND_URL}/api/auth/login, {
-            const response = await axios.post('http://localhost:3500/api/auth/login', {
+            const response = await axios.post('https://petadoptionplatform-backend.onrender.com/api/auth/login', {
               username,
               password,
             });

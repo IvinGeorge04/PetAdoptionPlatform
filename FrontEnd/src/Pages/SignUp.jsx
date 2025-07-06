@@ -27,7 +27,7 @@ function Signup() {
 
     try {
       // const res = await fetch(${import.meta.env.VITE_BACKEND_URL}/api/auth/signup, {
-      const res = await fetch('http://localhost:3500/api/auth/signup', {
+      const res = await fetch('https://petadoptionplatform-backend.onrender.com/api/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),

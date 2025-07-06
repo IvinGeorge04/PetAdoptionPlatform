@@ -12,7 +12,7 @@ function Cat() {
   }
   
   useEffect(()=>{
-    axios.get('http://localhost:3500/api/catData')
+    axios.get('https://petadoptionplatform-backend.onrender.com/api/catData')
       .then(response =>setPets(response.data))
       .catch(error => console.error('Error fetching turfs:',error));
   },[]);

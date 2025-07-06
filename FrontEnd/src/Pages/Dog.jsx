@@ -11,10 +11,10 @@ function Dog() {
     alert(`Pet is inquired`);
   }
     useEffect(()=>{
-      axios.get('http://localhost:3500/api/dogData')
-        .then(response =>setDogs(response.data))
-        .catch(error => console.error('Error fetching turfs:',error));
-    },[]);
+    axios.get('https://petadoptionplatform-backend.onrender.com/api/dogData')
+      .then(response =>setDogs(response.data))
+      .catch(error => console.error('Error fetching turfs:',error));
+  },[]);
   return (
     <div> {/* One root div */}
       <header className="header">
