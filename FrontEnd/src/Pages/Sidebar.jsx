@@ -16,10 +16,10 @@ function Sidebar() {
 
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="Laws">⚖️Laws</a></li>
-          <li><a href="PawsAndPeace">🐾Paws&Peace</a></li>
-          <li><a href="MedicalCare">🦴MedicalCare</a></li>
-          <li><a href="FaqPage">🗨️FAQs</a></li>
+          <li><Link to="/Laws">⚖️Laws</Link></li>
+          <li><Link to="/PawsAndPeace">🐾Paws&Peace</Link></li>
+          <li><Link to="/MedicalCare">🦴MedicalCare</Link></li>
+          <li><Link to="/FaqPage">🗨️FAQs</Link></li>
         </ul>
       </div>
 
