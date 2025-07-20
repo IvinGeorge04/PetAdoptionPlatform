@@ -1,7 +1,6 @@
 import React from 'react';
 import './PawsAndPeace.css';
 import Sidebar from './Sidebar';
-import './Sidebar.css';
 import { Link } from 'react-router-dom';
 function PawsAndPeace() {
   const imageUrls = [
